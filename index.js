@@ -1,6 +1,6 @@
 // Import stylesheets
 import './style.css';
-//newSnake
+
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
