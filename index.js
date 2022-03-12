@@ -6,11 +6,11 @@ const ctx = canvas.getContext('2d');
 
 const ground = new Image();
 ground.src =
-  'https://raw.githubusercontent.com/San4ezzZ03/newSnake/master/img/ground.png';
+  'https://raw.githubusercontent.com/San4ezzZ03/newSnake/master/ground.png';
 
 const foodImg = new Image();
 foodImg.src =
-  'https://raw.githubusercontent.com/San4ezzZ03/newSnake/master/img/food.png';
+  'https://raw.githubusercontent.com/San4ezzZ03/newSnake/master/food.png';
 
 let box = 32;
 
