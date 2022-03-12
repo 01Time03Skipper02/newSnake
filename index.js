@@ -5,10 +5,12 @@ const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
 const ground = new Image();
-ground.src = 'img/ground.png';
+ground.src =
+  'https://raw.githubusercontent.com/San4ezzZ03/testSnake/main/img/ground.png?token=GHSAT0AAAAAABPWI4Q26MKUSRW2GLNOHAIMYRNEVSQ';
 
 const foodImg = new Image();
-foodImg.src = 'img/food.png';
+foodImg.src =
+  'https://raw.githubusercontent.com/San4ezzZ03/testSnake/main/img/food.png?token=GHSAT0AAAAAABPWI4Q2UWFYJOOET5AOOXCCYRNEVMA';
 
 let box = 32;
 
