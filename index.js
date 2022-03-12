@@ -5,12 +5,10 @@ const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
 const ground = new Image();
-ground.src =
-  'https://raw.githubusercontent.com/San4ezzZ03/Snake/master/img/ground.png';
+ground.src = 'img/ground.png';
 
 const foodImg = new Image();
-foodImg.src =
-  'https://raw.githubusercontent.com/San4ezzZ03/Snake/master/img/food.png';
+foodImg.src = 'img/food.png';
 
 let box = 32;
 
@@ -43,7 +41,6 @@ function eatTail(head, arr) {
     if (head.x == arr[i].x && head.y == arr[i].y) clearInterval(game);
   }
 }
-
 function spawnFood(length, snakeX, snakeY) {
   food = {
     x: Math.floor(Math.random() * 17 + 1) * box,
