@@ -8,5 +8,6 @@ canvas {
   top: 50px;
   height: 40px;
   width: 100px;
-  background-color: red;
+  background-image: url(https://raw.githubusercontent.com/San4ezzZ03/newSnake/master/img/fon.jpg);
+  color: red;
 }
