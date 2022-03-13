@@ -11,7 +11,7 @@ ground.src =
 
 const foodImg = new Image();
 foodImg.src =
-  'https://stackblitz.com/files/js-nbutl7/github/San4ezzZ03/newSnake/master/food.png';
+  'https://raw.githubusercontent.com/San4ezzZ03/newSnake/master/img/food.png';
 
 let box = 32;
 
