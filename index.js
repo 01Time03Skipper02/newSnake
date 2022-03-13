@@ -44,6 +44,7 @@ function direction(event) {
 }
 
 function rest(event) {
+  clearInterval(game);
   snake = [];
   snake[0] = {
     x: 9 * box,
