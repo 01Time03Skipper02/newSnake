@@ -3,6 +3,7 @@ import './style.css';
 
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
+const restart = document.getElementById('restart');
 
 const ground = new Image();
 ground.src =
@@ -28,7 +29,7 @@ snake[0] = {
 };
 
 document.addEventListener('keydown', direction);
-
+restart.addEventListener('click', rest);
 let dir;
 
 function direction(event) {
@@ -40,6 +41,20 @@ function direction(event) {
     dir = 'right';
   else if ((event.keyCode == 83 || event.keyCode == 40) && dir != 'up')
     dir = 'down';
+}
+
+function rest(event) {
+  snake = [];
+  snake[0] = {
+    x: 9 * box,
+    y: 10 * box,
+  };
+  score = 0;
+  spawnFood(snake.length, snake[0].x, snake[0].y);
+  dir = '';
+  document.addEventListener('keydown', direction);
+  drawGame();
+  game = setInterval(drawGame, 100);
 }
 
 function eatTail(head, arr) {
@@ -89,8 +104,9 @@ function drawGame() {
     snakeX > box * 17 ||
     snakeY < 3 * box ||
     snakeY > box * 17
-  )
+  ) {
     clearInterval(game);
+  }
 
   if (dir == 'left') snakeX -= box;
   if (dir == 'right') snakeX += box;

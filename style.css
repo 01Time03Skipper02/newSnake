@@ -1,4 +1,12 @@
-canvas{
+canvas {
   margin: 0 auto;
   display: block;
+}
+#restart {
+  position: relative;
+  left: 60%;
+  top: 50px;
+  height: 40px;
+  width: 100px;
+  background-color: red;
 }
